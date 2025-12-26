@@ -173,12 +173,14 @@ name = "gold"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "polygon-api-client" },
     { name = "pytz" },
     { name = "yfinance" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "polygon-api-client", specifier = ">=1.16.3" },
     { name = "pytz", specifier = ">=2025.2" },
     { name = "yfinance", specifier = ">=0.2.66" },
 ]
@@ -321,6 +323,20 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/cf/86/0248f086a84f01b37aaec0fa567b397df1a119f73c16f6c7a9aac73ea309/platformdirs-4.5.1.tar.gz", hash = "sha256:61d5cdcc6065745cdd94f0f878977f8de9437be93de97c1c12f853c9c0cdcbda", size = 21715, upload-time = "2025-12-05T13:52:58.638Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cb/28/3bfe2fa5a7b9c46fe7e13c97bda14c895fb10fa2ebf1d0abb90e0cea7ee1/platformdirs-4.5.1-py3-none-any.whl", hash = "sha256:d03afa3963c806a9bed9d5125c8f4cb2fdaf74a55ab60e5d59b3fde758104d31", size = 18731, upload-time = "2025-12-05T13:52:56.823Z" },
+]
+
+[[package]]
+name = "polygon-api-client"
+version = "1.16.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "certifi" },
+    { name = "urllib3" },
+    { name = "websockets" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9a/c6/f552a630041f5d9b60d3bf7736db54969648c4c0938cb6ff45abe1bd16ec/polygon_api_client-1.16.3.tar.gz", hash = "sha256:df575ff6a4a7636cc92272803749adca7e81d2340af493c51a19fe75b51530fc", size = 44077, upload-time = "2025-10-30T14:39:25.445Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1c/5e/a7121fd1ba43ec8672c0fb481e119ea9dede5f0ba6016f45f272e49c6de5/polygon_api_client-1.16.3-py3-none-any.whl", hash = "sha256:4dec9e27fb5d17a36aacd9372d1df30af2f2b7639b4166ca10d2d48d128d2cd8", size = 61992, upload-time = "2025-10-30T14:39:24.134Z" },
 ]
 
 [[package]]
